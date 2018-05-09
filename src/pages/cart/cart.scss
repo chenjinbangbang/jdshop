@@ -1,0 +1,41 @@
+.cart_list{ display:flex;  border-bottom:1px solid #ccc; padding:1rem .5rem;
+    dt{ width:10rem; display:flex; align-items: center;
+        ion-checkbox{ width:2.8rem; height:2.8rem;}
+        img{ height:6rem; margin-right:.5rem;}
+    }
+    dd{ flex:1;
+        //商品标题
+        .cart_title{ font-size:1.4rem; padding: .5rem; margin:0;}
+        //底部价格
+        .cart_info{ display:flex;
+            .cart_price{ flex:1; line-height:2.4rem;}
+            .cart_num{ width:100px; display:flex; margin-left:auto;
+                .input_left,.input_right{ width:2.8rem; height:2.8rem; line-height:2.8rem; text-align:center; border:1px solid #eee; background-color:#eee;}
+                .input_center{ flex:1; 
+                    input{ width:100%; height:2.8rem; border:1px solid #eee; text-align:center;}
+                }
+            }
+        }
+    }
+}
+
+//底部
+.all_price{ height:4.4rem; line-height:4.4rem;
+    ion-checkbox{ position:relative; top: .6rem;}
+}
+
+.checkbox-ios.checkbox-disabled, .item-ios.item-checkbox-disabled ion-label{
+    opacity:1;
+}
+
+.cart_spinner{
+    width:60px; height:60px; margin:60px auto;
+}
+
+.dopay{
+    height:4.4rem; line-height:4.4rem; text-align:center; padding:0 1.4rem; color:#fff; background:red; font-size:1.6rem;
+}
+
+.dodelete{
+    height:3.4rem; line-height:3.4rem; text-align:center; padding:0 1.4rem; color:#666; font-size:1.6rem; border-radius:.5rem; //border:1px solid red;
+}

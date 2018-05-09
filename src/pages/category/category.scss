@@ -1,0 +1,32 @@
+.cate_content{ 
+    width:100%; height:100%; display:flex;
+    .cate_left{ 
+        width:100px; height:100%; overflow-y:auto; border-right:1rem solid #eee;
+        ion-label{
+            font-size:1.4rem;
+        }
+    }
+    .cate_right{ 
+        flex:1; height:100%; overflow-y:auto;
+        ion-label{
+            font-size:1.4rem;
+        }
+        ion-col{
+            border: .05px solid #eee;
+            margin-left: -.05rem;
+            margin-bottom: -0.05rem;
+            p{
+                text-align:block;
+                color:#666;
+            }
+            img{
+                display:block;
+                margin:0 auto;
+                max-width: 90%;
+            }
+        }
+        .ion-col:nth-child(3n){
+            border-right: 0;
+        }
+    }
+}
